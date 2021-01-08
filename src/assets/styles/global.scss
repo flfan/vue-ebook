@@ -1,0 +1,11 @@
+@import './reset.scss';
+
+$ratio: 375 / 10;
+
+@function px2rem($px) {
+  @return $px / $ratio + rem;
+}
+
+// 375 / 10 = 1rem
+// 1 px = (1 / ratio) rem
+// 10 px = 10 * (1/ratio) rem
